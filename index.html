@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>رغيف | المنيو</title>
+<meta name="description" content="منيو مطعم رغيف الكامل - فول، طعمية، بطاطس، بيض، جبنة، ومشروبات. فطار بمزاج، متاح من 7:30 صباحاً حتى 2:00 بعد منتصف الليل.">
+<link rel="canonical" href="https://regheef.github.io/menu/">
+
+<meta property="og:title" content="رغيف | المنيو">
+<meta property="og:description" content="منيو مطعم رغيف الكامل - فطار بمزاج">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://regheef.github.io/menu/logo.png">
+<meta property="og:url" content="https://regheef.github.io/menu/">
+<meta name="twitter:card" content="summary">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0c6b68">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="رغيف">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="splash">
+  <img src="logo.png" alt="">
+  <div class="bar"></div>
+</div>
+
+<header class="hero">
+  <img class="logo-img" src="logo.png" alt="رغيف">
+  <div class="tagline">فطار بمزاج</div>
+
+  <div class="pill-row">
+    <a href="#mashrobat">🥤 مشروبات</a>
+    <a href="#foul">🥪 ساندوتشات</a>
+    <a href="#beid">🍽️ أطباق</a>
+    <a href="#edafat">🧂 إضافات</a>
+  </div>
+
+  <div class="info-bar">
+    <span>📞 <a href="tel:01044333553"><bdi class="ltr-num">010 44 333 553</bdi></a></span>
+    <span>🕐 من 7:30 صباحاً حتى 2:00 بعد منتصف الليل</span>
+    <span class="talabat">متاح أيضاً عبر talabat</span>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <div class="tab-scroll">
+    <a href="#foul">الفول</a>
+    <a href="#taameya">الطعمية</a>
+    <a href="#batates">البطاطس</a>
+    <a href="#beid">البيض</a>
+    <a href="#gebna">الجبنة</a>
+    <a href="#betengan">الباذنجان</a>
+    <a href="#moqablat">مقبلات</a>
+    <a href="#soces">صوصات</a>
+    <a href="#edafat">إضافات</a>
+    <a href="#3eesh">عيش</a>
+    <a href="#mashrobat">مشروبات</a>
+  </div>
+  <button class="search-toggle" id="search-toggle" aria-label="بحث">🔍</button>
+</nav>
+<div class="search-panel" id="search-panel">
+  <input type="text" id="search-input" placeholder="ابحث عن صنف...">
+</div>
+
+<main>
+
+  <section class="category" id="foul">
+    <div class="cat-head"><div class="rule"></div><h2>الفول</h2></div>
+    <div class="note">الأسعار: ساندوتش · علبة صغيرة · علبة وسط · علبة كبيرة</div>
+    <div id="foul-list"></div>
+  </section>
+
+  <section class="category" id="taameya">
+    <div class="cat-head"><div class="rule"></div><h2>الطعمية</h2></div>
+    <div class="note">الأسعار: ساندوتش · قرص</div>
+    <div id="taameya-list"></div>
+    <div class="simple-list" style="margin-top:14px">
+      <div class="simple-row"><span>بوكس أماطي صغير (5 قطع)</span><span class="price">20</span></div>
+      <div class="simple-row"><span>بوكس أماطي كبير (10 قطع)</span><span class="price">35</span></div>
+      <div class="simple-row"><span>عجينة طعمية صغيرة</span><span class="price">15</span></div>
+      <div class="simple-row"><span>عجينة طعمية كبيرة</span><span class="price">25</span></div>
+    </div>
+  </section>
+
+  <section class="category" id="batates">
+    <div class="cat-head"><div class="rule"></div><h2>البطاطس</h2></div>
+    <div class="note">الأسعار: ساندوتش · علبة صغيرة · علبة كبيرة</div>
+    <div id="batates-list"></div>
+  </section>
+
+  <section class="category" id="beid">
+    <div class="cat-head"><div class="rule"></div><h2>البيض</h2></div>
+    <div class="note">الأسعار: ساندوتش · علبة</div>
+    <div id="beid-list"></div>
+  </section>
+
+  <section class="category" id="gebna">
+    <div class="cat-head"><div class="rule"></div><h2>الجبنة</h2></div>
+    <div class="note">الأسعار: ساندوتش · علبة صغيرة · علبة كبيرة</div>
+    <div id="gebna-list"></div>
+  </section>
+
+  <section class="category" id="betengan">
+    <div class="cat-head"><div class="rule"></div><h2>الباذنجان المقلي</h2></div>
+    <div class="note">الأسعار: ساندوتش · علبة صغيرة · علبة كبيرة</div>
+    <div id="betengan-list"></div>
+  </section>
+
+  <section class="category" id="moqablat">
+    <div class="cat-head"><div class="rule"></div><h2>مقبلات</h2></div>
+    <div class="simple-list" id="moqablat-list"></div>
+  </section>
+
+  <section class="category" id="soces">
+    <div class="cat-head"><div class="rule"></div><h2>صوصات</h2></div>
+    <div class="simple-list" id="soces-list"></div>
+  </section>
+
+  <section class="category" id="edafat">
+    <div class="cat-head"><div class="rule"></div><h2>إضافات</h2></div>
+    <div class="simple-list" id="edafat-list"></div>
+  </section>
+
+  <section class="category" id="3eesh">
+    <div class="cat-head"><div class="rule"></div><h2>عيش</h2></div>
+    <div class="simple-list" id="3eesh-list"></div>
+  </section>
+
+  <section class="category" id="mashrobat">
+    <div class="cat-head"><div class="rule"></div><h2>مشروبات</h2></div>
+    <div class="simple-list" id="mashrobat-list"></div>
+  </section>
+
+</main>
+
+<footer>
+  <img class="f-logo" src="logo.png" alt="رغيف">
+  <div>بي بارد مول - القاهرة الجديدة</div>
+  <div>📞 <bdi class="ltr-num">01044333553</bdi></div>
+  <div class="socials">
+    <a href="https://facebook.com/Regheefeg" target="_blank" rel="noopener">فيسبوك</a>
+    <a href="https://instagram.com/regheef.eg" target="_blank" rel="noopener">إنستجرام</a>
+    <a href="https://tiktok.com/@regheef.eg" target="_blank" rel="noopener">تيك توك</a>
+  </div>
+  <div class="talabat">متاح أيضاً من خلال talabat</div>
+</footer>
+
+<a href="tel:01044333553" class="fab call" aria-label="اتصل بنا">📞</a>
+<a href="https://wa.me/201044333553" target="_blank" rel="noopener" class="fab whatsapp" aria-label="واتساب">💬</a>
+<a href="#tabs" id="top-btn" class="fab top" aria-label="لأعلى">↑</a>
+
+<script src="app.js"></script>
+</body>
+</html>
