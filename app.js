@@ -10,7 +10,7 @@ function renderTable(mount, headers, rows){
   const theadCells = headers.map(h => `<th>${h}</th>`).join('');
   const bodyRows = rows.map(r => {
     const [name, ...vals] = r;
-    const cells = vals.map((v,i) => td(v, i>0 || headers.length===2, headers[i+1])).join('');
+    const cells = vals.map((v,i) => td(v, i>0 || headers.length===2, headers[i])).join('');
     return `<tr><td>${name}</td>${cells}</tr>`;
   }).join('');
   mount.innerHTML = `<table class="menu-table">
